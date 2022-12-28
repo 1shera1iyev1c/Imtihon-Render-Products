@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render Products</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="body">
+    <header>
+        <div class="container header__container d-flex justify-content-between align-items-center">
+        <div class="header__content ">
+           <a class="header__logo " href="index.html">
+            QPICK
+           </a>
+                <img class="me-3" src="img/telefon.png" alt="tel" width="15" height="21">
+                <a href="#" class="header__link" >Выбрать модель телефона</a>
+                <img src="img/pas.png" alt="pas" width="8" height="5">
+        </div>
+        <a href="#">
+            <img src="img/korzina.png" alt="korzina" width="120" height="60">
+        </a>
+        <div class="mode">
+            <label class="label">Dark</label>
+            <input type="checkbox" class="check" id="check">
+        </div>
+        </div>
+    </header>
+    <div class="container intro__container bg-dark d-flex align-items-center justify-content-around">
+        <h2 class="intro__name link-light w-50">Скидка на одежду
+        заголовок рыбными, коварных рукописи. 
+        </h2>
+        <img src="img/kiyim.png" alt="rasm" width="300">
+    </div>
+
+    <div class="container pt-5 pb-5">
+    <form class="form d-flex justify-content-between">
+        <input type="text" class="form-control input-title me-4" placeholder="Search">
+        <input type="number" class="input-number form-control me-4" min="1.5" step="0.1" placeholder="Search Ratings">
+        <select class="select form-select me-4">
+            <option value="All">All</option>
+        </select>
+        <select class="high-low form-select me-4">
+            <option value="default">Default</option>
+            <option value="high">Price (high to low )</option>
+            <option value="low">Price (low to high )</option>
+        </select>
+        <button class=" btn btn-primary">Search</button>
+    </form>
+    </div>
+
+    <main>
+        <section class="render container">
+            <h2 class="prise text-end mt-5"> <strong class="text-info">Total Count:</strong> <span class="num num1"></span></h2>
+            <ul class="render__content d-flex justify-content-around flex-wrap pt-5 mt-5">
+                
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container d-flex align-items-start justify-content-between">
+            <a class="footer__logo " href="index.html">
+                QPICK
+            </a>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Избранное
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Корзина
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <div class="footer__content">
+                <a href="#" class="footer__link2">Условия сервиса</a> <br>
+                <img src="img/language.png" alt="language">
+            </div>
+            <div>
+                <a class="ms-2" href="https://vk.com/">
+                    <img src="img/VK.png" alt="rasm" width="30" height="20">
+                </a>
+                <a class="ms-2" href="https://instagram.com/1sheraliyev1c">
+                    <img src="img/Instagram.png" alt="rasm" width="30" height="30">
+                </a>
+                <a class="ms-2" href="https://t.me/sheraliyev1c">
+                    <img src="img/Telegram.png" alt="rasm" width="30" height="30">
+                </a>
+                <a class="ms-2" href="https://www.whatsapp.com">
+                    <img src="img/Whatsapp.png" alt="rasm" width="30" height="30">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <div class="modal fade div-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body movie-text">
+            ....
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+        </div>
+        </div>
+    </div>
+      
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title2 text-center">Modal title</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <img class="img" src="#" alt="">
+          <div class="modal-body d-flex align-items-center">
+            <h2 class="text-warning me-3">Total price :</h2>
+            <h3 class="modal-text mt-1 text-info">Price</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <a target="_blank" href="https://fakestoreapi.com" class="btn btn-primary">Order Now</a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+      
+        
+<template id="temlpate">
+    <li class="item">
+        <h1 class="jewelery">Jewelery</h1>
+        <img class="image" src="">
+        <h3 class="title"></h3>
+        <p class="year text-warning d-flex align-items-center">
+            <img src="img/star.png" alt="star" width="23" height="21"> 
+            <span class="text2 text-warning ms-2 mb-1"></span>
+        </p>
+        <p class="year text-warning">
+            <strong class="text-body">Price:</strong> 
+            <span class="text text-warning"></span> 
+        </p>
+        <p class="year">
+            <strong class="text-body">Category: </strong> 
+            <span class="text3 text-warning"></span>
+        </p>
+        <div class="div">
+        <button type="button" class="btn btn-outline-primary" id="btn" data-bs-toggle="modal" data-bs-target="#myModal">Buy Now</button>
+        <button type="button" class="btn btn-outline-info modal-btn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">More info</button>
+        </div>
+    </li>
+</template>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
