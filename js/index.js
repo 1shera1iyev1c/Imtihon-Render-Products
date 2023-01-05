@@ -16,6 +16,7 @@ let elCheck = document.querySelector('.check')
 let elLabel = document.querySelector('.label')
 let elLogo = document.querySelector('.header__logo')
 let elLink = document.querySelector('.header__link')
+let elBall = document.querySelector('.ball')
 
 
 // Render products
@@ -53,7 +54,6 @@ elCheck.addEventListener('change', function (evt) {
     if (evt.target.checked === false) {
         elBody.classList.add('light')
         elBody.classList.remove('dark')
-        elLabel.textContent = 'Dark'
         elLabel.classList.add('label')
         elLogo.classList.remove('header__logo--light')
         elLogo.classList.add('header__logo')
@@ -61,10 +61,13 @@ elCheck.addEventListener('change', function (evt) {
         elLink.classList.add('header__link')
         num.classList.add('num')
         num.classList.remove('num-light')
+        elBall.classList.add('ball')
+        elBall.classList.remove('ball2')
     }else{
+        elBall.classList.add('ball2')
+        elBall.classList.remove('ball')
         elBody.classList.add('dark')
         elBody.classList.remove('light')
-        elLabel.textContent = 'Light'
         elLabel.classList.remove('label')
         elLabel.classList.add('light__lebel')
         elLogo.classList.remove('header__logo')

@@ -7,6 +7,7 @@
     <title>Render Products</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body class="body">
     <header>
@@ -22,9 +23,30 @@
         <a href="#">
             <img src="img/korzina.png" alt="korzina" width="120" height="60">
         </a>
-        <div class="mode">
-            <label class="label">Dark</label>
-            <input type="checkbox" class="check" id="check">
+        <div>
+            <input style="opacity: 0;
+            position: absolute;" class="check" id="check" type="checkbox">
+            <label style="background-color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            border-radius: 50px;
+            height: 26px;
+            width: 50px;
+            " for="check" class="label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span style="width: 22px;
+                height: 22px;
+                background-color: #fff;
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                border-radius: 50%;
+                transition: transform 0.2s linear;" class="ball"></span>
+            </label>
         </div>
         </div>
     </header>
@@ -53,7 +75,7 @@
 
     <main>
         <section class="render container">
-            <h2 class="prise text-end mt-5"> <strong class="text-info">Total Count:</strong> <span class="num num1"></span></h2>
+            <h2 class="prise text-end mt-5"> <strong class="text-info">Total Count:</strong> <span class="num num1">0</span></h2>
             <ul class="render__content d-flex justify-content-around flex-wrap pt-5 mt-5">
                 
             </ul>
@@ -110,7 +132,7 @@
             <h5 class="modal-title" id="staticBackdropLabel">Title</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body movie-text">
+            <div class=" movie-text">
             ....
             </div>
             <div class="modal-footer">
@@ -121,7 +143,7 @@
         </div>
     </div>
       
-    <div class="modal" id="myModal">
+    <div class="modal" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">

@@ -30,6 +30,12 @@
     padding: 0;
 }
 
+.ball2{
+    transform: translateX(24px);   
+}
+.label2{
+    transform: translateX(24px);
+}
 ul{
     list-style-type: none;
     padding: 0;
@@ -307,7 +313,7 @@ a{
 .label{
     margin-right: 20px;
     margin-bottom: 5px;
-    color: #000;
+    color: #fff;
 }
 .header__logo--light{
     margin-right: 75px;
