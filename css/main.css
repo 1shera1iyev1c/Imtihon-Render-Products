@@ -225,7 +225,7 @@ a{
     color: #aeacac;
     display: block;
     position: absolute;
-    bottom: -1480px;
+    bottom: calc(100% - 2300px);
 }
 .item:nth-child(9) h1{
     font-weight: 600;
@@ -234,7 +234,7 @@ a{
     color: #adacac;
     display: block;
     position: absolute;
-    bottom: -2870px;
+    bottom: calc(100% - 3670px);
 }
 .item:nth-child(15) h1{
     font-weight: 600;
@@ -243,7 +243,7 @@ a{
     color: #ababab;
     display: block;
     position: absolute;
-    bottom: -4450px;
+    bottom: calc(100% - 5270px);
 }
 .item:nth-child(1) h1{
     font-weight: 600;
@@ -252,7 +252,7 @@ a{
     color: #838383;
     display: block;
     position: absolute;
-    bottom: -0px;
+    bottom: calc(100% - 810px);
 }
 .item:nth-child(15){
     margin-top: 100px;

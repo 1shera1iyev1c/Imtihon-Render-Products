@@ -94,7 +94,11 @@ elCheck.addEventListener('change', function (evt) {
             elModalDiv.querySelector('.movie-text').textContent = findInfo.description;
        }
     })
-})();
+})().catch(() =>{
+    if (!moreInfoModal2) {
+        alert('Error')
+    }
+});;
 
 // Creat buy now modal
 ;(async function(){
@@ -112,7 +116,11 @@ elCheck.addEventListener('change', function (evt) {
             elModalDiv2.querySelector('.img').src = findBuyNow.image;
        }
     })
-})();
+})().catch(() =>{
+    if (!moreInfoModal) {
+        alert('Error')
+    }
+});
 
 //Render category
 function renderCategories(item) {
@@ -190,4 +198,8 @@ elForm.addEventListener('input', function(evt){
     renderProducts(data)
     renderCategories(data)
     console.log(data);
-})()
+})().catch(() =>{
+    if (data.length === 0) {
+        alert('Error')
+    }
+});
